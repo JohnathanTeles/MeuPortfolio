@@ -72,6 +72,7 @@
 			    });
 			}
 
+
         function redirectToWhatsApp() {
             let telefone = '5562995552510';  
 			let mensagem = 'Olá, vi seu portfólio e gostaria de saber mais sobre suas habilidades e projetos. Vamos conversar!';

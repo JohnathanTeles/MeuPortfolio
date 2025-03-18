@@ -484,7 +484,7 @@ body {
     height: 100vh;
     padding: 80px 5%;
     text-align: center;
-    background-image: url('imagem/background.png'); /* Caminho da imagem */
+    background-image: url('imagem/background.png'); 
     background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat;
@@ -533,33 +533,33 @@ body {
     height: 80px;
     background: url('imagem/pontos.png') no-repeat center/cover;
     position: absolute;
-    top: 80px; /* Ajuste conforme necessário */
-    left: 20px; /* Ajuste conforme necessário */
+    top: 80px;
+    left: 20px; 
 }
 .pontos2 {
     width: 80px;
     height: 80px;
     background: url('imagem/pontos.png') no-repeat center/cover;
     position: absolute;
-    bottom: 10px; /* Distância da borda inferior */
-    right: 10px; /* Distância da borda direita */
+    bottom: 10px;
+    right: 10px; 
 }
 #imagem-apresentacao {
     width: 100%;
-    max-width: 430px; /* Define um tamanho máximo */
-    height: auto; /* Mantém a proporção */
+    max-width: 430px; 
+    height: auto; 
     aspect-ratio: 1/1; /* Garante que a imagem seja quadrada */
     background: url('imagem/fotoEu.jpg') no-repeat center/cover;
     margin: 50px auto; /* Centraliza e ajusta espaçamento */
-        border: 3px solid rgba(255, 255, 255, 0.1); /* Branco com 50% de transparência */
+    border: 3px solid rgba(255, 255, 255, 0.1); /* Branco com 50% de transparência */
 }
 
 
 /* Ajustes para telas menores */
 @media (max-width: 600px) {
     #imagem-apresentacao {
-        max-width: 300px; /* Reduz o tamanho da imagem */
-        margin: 30px auto; /* Ajusta margem */
+        max-width: 300px; 
+        margin: 30px auto; 
     }
 }
 .transicao{
@@ -598,8 +598,8 @@ body {
     gap: 30px;
     flex-wrap: wrap;
     max-width: 800px;
-    margin: 20px auto; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza os elementos dentro da div */
+    margin: 20px auto; 
+    justify-content: center;
 }
 
 .sobreTexto {
@@ -734,16 +734,16 @@ body {
 
 }
 .conteudoContato {
-    display: flex; /* Agora os itens vão ficar na mesma linha */
-    justify-content: center; /* Centraliza na tela */
-    align-items: center; /* Alinha verticalmente */
-    gap: 25px; /* Espaço entre telefone e e-mail */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 25px; 
 }
 
 .contato-info {
-    display: flex; /* Mantém imagem e texto na mesma linha */
-    align-items: center; /* Alinha verticalmente */
-    gap: 10px; /* Espaço entre imagem e texto */
+    display: flex; 
+    align-items: center;
+    gap: 10px; 
 }
 
 #imagem-contato { 
