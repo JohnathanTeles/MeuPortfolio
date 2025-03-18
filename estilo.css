@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    background-image: #f5f5f5;
+    color: #333;
+}
+
+/********************** MENU ******************/
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15%;
+    background: #222;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#jt-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    white-space: nowrap;
+}
+
+#jt {
+    font-size: 24px;
+    font-weight: bold;
+    transition: opacity 0.0s ease 2s; /* Delay de 2s apenas para reaparecer */
+}
+
+#jt.fullName {
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.0s ease; /* Sem delay para aparecer */
+    position: absolute;
+    left: 0;
+}
+
+.menu:hover #jt {
+    opacity: 0; /* "JT" desaparece imediatamente */
+    transition-delay: 0s; /* Sem atraso ao sumir */
+}
+
+.menu:hover #jt.fullName {
+    opacity: 1; /* "Johnathan Teles" aparece imediatamente */
+    transition-delay: 0s; /* Sem atraso ao aparecer */
+}
+
+.menu:not(:hover) #jt.fullName {
+    opacity: 0; /* Nome desaparece */
+    transition-delay: 1s; /* Aguarda 2 segundos antes de sumir */
+}
+
+.menu:not(:hover) #jt {
+    opacity: 1; /* "JT" reaparece */
+    transition-delay: 1s; /* Aguarda 2 segundos para voltar */
+}
+
+.menuLinks {
+    display: flex;
+    gap: 20px;
+}
+
+.menuLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    font-weight: Segoe UI;
+}
+
+.menuLinks a:hover {
+    color: #00aaff;
+}
+
+/****************** APRESENTAÇÃO **************/
+
+
+.apresentacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 80px 5%;
+    text-align: center;
+    background-image: url('imagem/background.png'); 
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#conteudo-apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+#texto-apresentacao {
+    text-align: left;
+}
+
+#dev1 {
+    font-size: 36px;
+}
+
+#dev2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.botao {
+    padding: 12px 20px;
+    border: none;
+    background: white;
+    color: #0077cc;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0,3s;
+}
+
+.botao:hover {
+    background: #ddd;
+}
+.pontos1 {
+    width: 80px;
+    height: 80px;
+    background: url('imagem/pontos.png') no-repeat center/cover;
+    position: absolute;
+    top: 80px;
+    left: 20px; 
+}
+.pontos2 {
+    width: 80px;
+    height: 80px;
+    background: url('imagem/pontos.png') no-repeat center/cover;
+    position: absolute;
+    bottom: 10px;
+    right: 10px; 
+}
+#imagem-apresentacao {
+    width: 100%;
+    max-width: 430px; 
+    height: auto; 
+    aspect-ratio: 1/1; /* Garante que a imagem seja quadrada */
+    background: url('imagem/fotoEu.jpg') no-repeat center/cover;
+    margin: 50px auto; /* Centraliza e ajusta espaçamento */
+    border: 3px solid rgba(255, 255, 255, 0.1); /* Branco com 50% de transparência */
+}
+
+
+/* Ajustes para telas menores */
+@media (max-width: 600px) {
+    #imagem-apresentacao {
+        max-width: 300px; 
+        margin: 30px auto; 
+    }
+}
+.transicao{
+    transition: transform 0.5s ease-in-out;
+
+}
+.transicao:hover{
+    transform: scale(1.1);
+
+}
+
+/**************** CONTAINERS *****************/
+.container {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.tituloCentral {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color:blue;
+    color: #263048
+
+}
+
+.sobreTexto {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/******************** SKILLS *****************/
+.classSkills {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 20px auto; 
+    justify-content: center;
+}
+
+.sobreTexto {
+    max-width: 800px;
+}
+.classSkills div {
+    text-align: center;
+}
+
+.classSkills img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/******************* PROJETOS *****************/
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+.card h3{
+    padding: 5px;
+}
+.imagem-container img {
+    width: 600px;
+    height: 400px;
+    border-radius: 5px;
+}
+.title-container p{
+    text-align: justify;
+}
+
+.containerProjeto {
+    margin-top: 15px;
+}
+
+
+.icons img {
+    width: 24px;
+    margin-left: 10px;
+
+}
+
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.view-project,
+.repository {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.view-project {
+    background: #0077cc;
+    color: white;
+}
+
+.repository {
+    background: #333;
+    color: white;
+}
+
+.view-project:hover {
+    background: #005f99;
+}
+
+.repository:hover {
+    background: #555;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    #conteudo-apresentacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #texto-apresentacao {
+        text-align: center;
+    }
+
+    #imagem-apresentacao {
+        width: 200px;
+        height: 200px;
+    }
+
+    .menuLinks {
+        gap: 10px;
+    }
+
+    .menuLinks a {
+        font-size: 14px;
+    }
+
+    .classSkills {
+        gap: 20px;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+}
+
+.containerContato {
+    justify-items: center;
+    color: white;
+    background-color: #393939;
+    width: 100%;
+    height: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+.tituloContato{
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: white;
+
+}
+.conteudoContato {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 25px; 
+}
+
+.contato-info {
+    display: flex; 
+    align-items: center;
+    gap: 10px; 
+}
+
+#imagem-contato { 
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    border-radius: 50%;
+    flex-shrink: 0; /* Evita que a imagem seja redimensionada */
+    background-image: url('imagem/telefone.png');
+}
+
+#imagem-email { 
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    border-radius: 50%;
+    flex-shrink: 0; /* Evita que a imagem seja redimensionada */
+    background-image: url('imagem/email.png');
+}
+#imagem-linkedin { 
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    border-radius: 50%;
+    flex-shrink: 0; /* Evita que a imagem seja redimensionada */
+    background-image: url('imagem/linkedin.png');
+}
+.email-texto, .telefone-texto, .linkedin-texto {
+    color: white;
+    font-size: 1.7rem;
+    text-decoration: none;
+}

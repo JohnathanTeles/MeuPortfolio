@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfólio - Johnathan Teles</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+
+        <script src="script.js"> </script>
+
+        <!-- MENU -->
+        <nav class="menu">
+
+            <div id="jt-container">
+                <div id="jt">JT</div>
+                <div id="jt" class="fullName">Johnathan Teles</div> 
+            </div>
+
+            <div class="menuLinks">
+                <a href="#home" onclick="homeSelecionado(event)">Home</a>
+                <a href="#sobre" onclick="sobreSelecionado(event)">Sobre</a>
+                <a href="#skills" onclick="skillsSelecionado(event)">Skills</a>
+                <a href="#portfolio" onclick="portfolioSelecionado(event)">Portfólio</a>
+                <a href="#contato" onclick="contatoSelecionado(event)">Contato</a>
+            </div>
+            
+        </nav>
+
+
+
+        <!-- APRESENTAÇÃO -->
+        <section class="apresentacao" id="home">
+            <div id="conteudo-apresentacao">
+                <div id="texto-apresentacao">
+                    <h1 id="dev1">Olá, sou Johnathan</h1>
+                    <h2 id="dev2">Desenvolvedor Back-end</h2>
+                    <button class="botao" onclick="redirectToWhatsApp(event)" >Contate me</button>
+                </div>
+                    <div class="pontos1 transicao"></div>
+                    <div class="pontos2 transicao"></div>
+
+                <div id="imagem-apresentacao" class="transicao" ></div>
+            </div  >
+        </section>
+
+        <!-- CONTAINER GERAL -->
+        <section class="container" id="sobre" >
+            <h2 class="tituloCentral" >Sobre Mim</h2>
+            <p class="sobreTexto">
+                Tenho habilidades em várias linguagens de programação e ferramentas, incluindo linguagem C, Java, PHP, HTML, CSS, JavaScript, PostgreSQL, Git e GitHub. Atualmente, estou desenvolvendo projetos acadêmicos e pessoais focados no back-end, aplicando essas tecnologias para resolver problemas reais e melhorar minhas habilidades. Utilizo essas ferramentas para criar soluções eficientes, desde a implementação de banco de dados até o controle de versão. Estou sempre buscando expandir meu conhecimento e trabalhar em projetos desafiadores, com o objetivo de me tornar um profissional completo na área de TI.
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="container" id="skills">
+            <h2 class="tituloCentral">Minhas Skills</h2>
+            <div class="classSkills">
+                <div>
+                    <img src="imagem/java.png">
+                    <p>Java</p>
+                </div>
+                <div>
+                    <img src="imagem/js.png">
+                    <p>JavaScript</p>
+                </div>
+                
+                <div>
+                    <img src="imagem/git.png">
+                    <p>Git</p>
+                </div>
+                <div>
+                    <img src="imagem/github.png">
+                    <p>Github</p>
+                </div>
+                <div>
+                    <img src="imagem/c.png">
+                    <p>C</p>
+                </div>
+                <div>
+                    <img src="imagem/php.png">
+                    <p>PhP</p>
+                </div>
+                <div>
+                    <img src="imagem/postgres.png">
+                    <p>PostgreSQL</p>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <!-- PORTFÓLIO -->
+        <section class="container" id="portfolio">
+            <h2 class="tituloCentral">Projetos</h2>
+            <div class="card">
+                <h3>Time Clock</h3>
+                <div class="imagem-container">
+                    <img src="imagem/descubraIdade.png" alt="Projeto 1">
+                </div>
+                <div class="containerProjeto">
+                    <div class="title-container">
+                        <div class="icons">
+                            <img src="imagem/html.png" alt="logo-html">
+                            <img src="imagem/css.jpg" alt="logo-css">
+                            <img src="imagem/js.png" alt="logo-js">
+                        </div>
+                    </div>
+                    <p>LifeClick é uma ferramenta simples e interativa que permite calcular a idade de uma pessoa a partir de sua data de nascimento. Além de mostrar a idade em anos, meses e dias, ela fornece informações sobre o total de dias, horas, minutos e milissegundos vividos até o momento. A interface é fácil de usar, oferecendo uma experiência prática e eficiente para os usuários.</p>
+                    <div class="buttons">
+                        <button class="view-project" onclick="window.open('file:///C:/Users/USER/Documents/Projetos/Lifeclock/Lifeclock.html', '_blank')">
+                              Ver Projeto
+                        </button>
+                        <button class="repository" onclick="window.open('https://github.com/JohnathanTeles/LifeClock')">Repositório</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <section class="container">
+            <div class="card">
+                <h3>Calculadora</h3>
+                <div class="imagem-container">
+                    <img src="imagem/calculadora.png" alt="Projeto 1">
+                </div>
+                <div class="containerProjeto">
+                    <div class="title-container">
+                        <div class="icons">
+                            <img src="imagem/html.png">
+                            <img src="imagem/css.jpg">
+                            <img src="imagem/js.png">
+                        </div>
+                    </div>
+                    <p>Projeto de calculadora interativa com funcionalidades de operações matemáticas. Permite que os usuários realizem cálculos utilizando números e operadores aritméticos como soma, subtração, multiplicação e divisão. A interface da calculadora é simples e intuitiva, com a opção de limpar o campo de entrada a qualquer momento.</p>
+                    <div class="buttons">
+                        <button class="view-project" onclick="window.open('file:///C:/Users/USER/Documents/Projetos/projetoCalculadora/index.html', '_blank')">
+                              Ver Projeto
+                            </button>
+                        <button class="repository" onclick="window.open('https://github.com/JohnathanTeles/Calculadora')">Repositório</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="containerContato" id="contato">
+            <h2 class="tituloContato">Contato</h2>
+
+            <div class="conteudoContato">
+
+                <div class="contato-info">
+                    <div id="imagem-contato" ></div>
+                    <a href="#" onclick="redirectToWhatsApp()" class="telefone-texto">(62) 99555-2510</a>
+                </div>
+
+                <div class="contato-info">
+                    <div id="imagem-email"></div>
+                    <a href="mailto:telesjohnathan@gmail.com" class="email-texto">telesjohnathan@gmail.com</a>
+                </div>
+
+                <div class="contato-info">
+                    <div id="imagem-linkedin"></div>
+                    <a href="https://www.linkedin.com/in/johnathanteles" class="linkedin-texto">Meu LinkedIn</a>
+                </div>
+
+            </div>
+        </section>
+
+    </body>
+</html>
