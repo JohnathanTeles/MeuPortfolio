@@ -42,33 +42,33 @@
 
 =======
 			function contatoSelecionado(event) {
-			    event.preventDefault(); // Evita o comportamento padrão do link
+			    event.preventDefault();
 			    document.querySelector("#contato").scrollIntoView({
-			        behavior: "smooth"  // Rolagem suave
+			        behavior: "smooth" 
 			    });
 			}
 			function portfolioSelecionado(event) {
-			    event.preventDefault(); // Evita o comportamento padrão do link
+			    event.preventDefault(); 
 			    document.querySelector("#portfolio").scrollIntoView({
-			        behavior: "smooth"  // Rolagem suave
+			        behavior: "smooth" 
 			    });
 			}
 			function skillsSelecionado(event) {
-			    event.preventDefault(); // Evita o comportamento padrão do link
+			    event.preventDefault(); 
 			    document.querySelector("#skills").scrollIntoView({
-			        behavior: "smooth"  // Rolagem suave
+			        behavior: "smooth" 
 			    });
 			}
 			function sobreSelecionado(event) {
-			    event.preventDefault(); // Evita o comportamento padrão do link
+			    event.preventDefault();
 			    document.querySelector("#sobre").scrollIntoView({
-			        behavior: "smooth"  // Rolagem suave
+			        behavior: "smooth" 
 			    });
 			}
 			function homeSelecionado(event) {
-			    event.preventDefault(); // Evita o comportamento padrão do link
+			    event.preventDefault();
 			    document.querySelector("#home").scrollIntoView({
-			        behavior: "smooth"  // Rolagem suave
+			        behavior: "smooth" 
 			    });
 			}
 
