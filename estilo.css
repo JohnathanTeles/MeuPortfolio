@@ -21,6 +21,7 @@ html, body {
     color: white;
     position: fixed;
     width: 100%;
+    height: auto;
     top: 0;
     left: 0;
     z-index: 100;
@@ -30,9 +31,9 @@ html, body {
     .menu {
         flex-direction: column; /* Empilha os itens verticalmente */
         padding: 10px 5%;
+        font-size: 3rem;
     }
 }
-
 #jt-container {
     display: flex;
     align-items: center;
@@ -40,56 +41,56 @@ html, body {
     white-space: nowrap;
 }
 
-#jt {
-    font-size: 1.5rem;
+#jt, #jt.fullName {
+    font-size: 1.8rem;
     font-weight: bold;
-    transition: opacity 0.0s ease 2s; /* Delay de 2s apenas para reaparecer */
+    position: absolute;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#jt {
+    opacity: 1;
 }
 
 #jt.fullName {
-    font-size: 1.5rem;
     opacity: 0;
-    transition: opacity 0.0s ease; /* Sem delay para aparecer */
-    position: absolute;
-    left: 0;
 }
 
 .menu:hover #jt {
-    opacity: 0; /* "JT" desaparece imediatamente */
-    transition-delay: 0s; /* Sem atraso ao sumir */
+    opacity: 0;
 }
 
 .menu:hover #jt.fullName {
-    opacity: 1; /* "Johnathan Teles" aparece imediatamente */
-    transition-delay: 0s; /* Sem atraso ao aparecer */
+    opacity: 1;
 }
 
-.menu:not(:hover) #jt.fullName {
-    opacity: 0; /* Nome desaparece */
-    transition-delay: 1s; /* Aguarda 2 segundos antes de sumir */
-}
-
-.menu:not(:hover) #jt {
-    opacity: 1; /* "JT" reaparece */
-    transition-delay: 1s; /* Aguarda 2 segundos para voltar */
-}
 
 .menuLinks {
     display: flex;
     gap: 20px;
+    height: auto;
 }
 
 .menuLinks a {
     color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.8rem; /* Tamanho da fonte para telas maiores */
     transition: color 0.3s ease;
-    font-weight: Segoe UI;
+    font-family: "Segoe UI", sans-serif; /* Definindo a fonte como Segoe UI */
+    font-weight: normal; /* Peso da fonte normal */
 }
 
 .menuLinks a:hover {
-    color: #00aaff;
+    color: #00aaff; /* Cor ao passar o mouse */
 }
+
+@media (max-width: 768px) {
+    .menuLinks a {
+        font-size: 2.2rem; /* Aumenta o tamanho da fonte para telas menores */
+    }
+}
+
 
 /****************** APRESENTAÇÃO **************/
 .apresentacao {
@@ -343,6 +344,7 @@ html, body {
      background-color: #393939;
      width: 100%;
      height: auto;
+     padding-bottom: 20px;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
  }
 
