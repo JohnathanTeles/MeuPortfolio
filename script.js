@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 			function contatoSelecionado(event) {
 			    event.preventDefault();
 			    document.querySelector("#contato").scrollIntoView({
@@ -82,4 +82,4 @@
             window.location.href = linkWhatsApp;
         }
 
->>>>>>> f6e20bf (projeto-completo)
+
