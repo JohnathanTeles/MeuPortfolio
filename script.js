@@ -33,14 +33,13 @@
 
         function redirectToWhatsApp() {
             let telefone = '5562995552510';  
-			let mensagem = 'Olá, vi seu portfólio e gostaria de saber mais sobre suas habilidades e projetos. Vamos conversar!';
+			let mensagem = 'Olá Johnathan, vi seu portfólio e gostaria de saber mais sobre suas habilidades e projetos. Vamos conversar!';
 
             let linkWhatsApp = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
             
             window.location.href = linkWhatsApp;
         }
 
-=======
 			function contatoSelecionado(event) {
 			    event.preventDefault();
 			    document.querySelector("#contato").scrollIntoView({
