@@ -30,8 +30,7 @@ html, body {
 @media (max-width: 768px) {
     .menu {
         flex-direction: column; /* Empilha os itens verticalmente */
-        padding: 10px 5%;
-        font-size: 3rem;
+        padding: 20px 0%;
     }
 }
 #jt-container {
@@ -42,8 +41,6 @@ html, body {
 }
 @media (max-width: 768px) {
     #jt-container {
-        flex-direction: column; /* Empilha os itens verticalmente */
-        padding: 10px 5%;
         display: none;
     }
 }
@@ -97,7 +94,7 @@ html, body {
 @media (max-width: 768px) {
     .menuLinks a {
         font-size: 1.4rem !important;
-        margin: 0px 5px !important;
+        margin: 0px 2px !important;
     }
 }
 
