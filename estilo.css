@@ -336,68 +336,79 @@ html, body {
     }
 }
 /*************CONTATO********************/
-.containerContato {
-    justify-items: center;
-    color: white;
-    background-color: #393939;
-    width: 100%;
-    height: 120px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-}
-.containerContato a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    transition: color 0.3s ease;
-    font-weight: Segoe UI;
-}
 
-.containerContato a:hover {
-    color: #00aaff;
-}
+ .containerContato {
+     justify-items: center;
+     color: white;
+     background-color: #393939;
+     width: 100%;
+     height: auto;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+ }
 
-.tituloContato {
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: white;
-}
+ .conteudoContato a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.6rem;
+        transition: color 0.3s ease;
+        font-weight: Segoe UI;
+    }
 
-.conteudoContato {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-}
+    .conteudoContato a:hover {
+        color: #00aaff;
+    }
 
-.contato-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+ .tituloContato{
+     font-size: 2.2rem;
+     margin-bottom: 10px;
+     color: white;
+ 
+ }
+ .conteudoContato {
+     display: flex; /* Agora os itens vão ficar na mesma linha */
+     justify-content: center; /* Centraliza na tela */
+     align-items: center; /* Alinha verticalmente */
+     gap: 25px; /* Espaço entre telefone e e-mail */
+ }
+ @media (max-width: 768px) {
+    .conteudoContato {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        padding: 10px 5%;
+    }
 }
-
-#imagem-contato {
-    height: 30px;
-    width: 30px;
-    background-size: cover;
-    border-radius: 50%;
-    flex-shrink: 0; /* Evita que a imagem seja redimensionada */
-    background-image: url('imagem/img-contato/telefone.png');
-}
-
-#imagem-email {
-    height: 30px;
-    width: 30px;
-    background-size: cover;
-    border-radius: 50%;
-    flex-shrink: 0; /* Evita que a imagem seja redimensionada */
-    background-image: url('imagem/img-contato/email.png');
-}
-
-#imagem-linkedin {
-    height: 30px;
-    width: 30px;
-    background-size: cover;
-    border-radius: 50%;
-    flex-shrink: 0; /* Evita que a imagem seja redimensionada */
-    background-image: url('imagem/img-contato/linkedin.png');
-}
+ .contato-info {
+     display: flex; /* Mantém imagem e texto na mesma linha */
+     align-items: center; /* Alinha verticalmente */
+     gap: 10px; /* Espaço entre imagem e texto */
+ }
+ 
+ #imagem-contato { 
+     height: 30px;
+     width: 30px;
+     background-size: cover;
+     border-radius: 50%;
+     flex-shrink: 0; /* Evita que a imagem seja redimensionada */
+     background-image: url('imagem/img-contato/telefone.png');
+ }
+ 
+ #imagem-email { 
+     height: 30px;
+     width: 30px;
+     background-size: cover;
+     border-radius: 50%;
+     flex-shrink: 0; /* Evita que a imagem seja redimensionada */
+     background-image: url('imagem/img-contato/email.png');
+ }
+ #imagem-linkedin { 
+     height: 30px;
+     width: 30px;
+     background-size: cover;
+     border-radius: 50%;
+     flex-shrink: 0; /* Evita que a imagem seja redimensionada */
+     background-image: url('imagem/img-contato/linkedin.png');
+ }
+ .email-texto, .telefone-texto, .linkedin-texto {
+     color: white;
+     font-size: 1.7rem;
+     text-decoration: none;
+ }
