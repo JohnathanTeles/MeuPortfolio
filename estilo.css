@@ -41,13 +41,13 @@ html, body {
 }
 
 #jt {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     transition: opacity 0.0s ease 2s; /* Delay de 2s apenas para reaparecer */
 }
 
 #jt.fullName {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     opacity: 0;
     transition: opacity 0.0s ease; /* Sem delay para aparecer */
     position: absolute;
@@ -172,7 +172,7 @@ html, body {
 }
 
 /* Ajustes para telas menores */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #imagem-apresentacao {
         max-width: 300px;
         margin: 30px auto;
