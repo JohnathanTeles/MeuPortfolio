@@ -83,20 +83,24 @@ html, body {
     color: white;
     text-decoration: none;
     font-size: 1.8rem; /* Tamanho da fonte para telas maiores */
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease; /* Suaviza a cor e a posição */
     font-family: "Segoe UI", sans-serif; /* Definindo a fonte como Segoe UI */
     font-weight: normal; /* Peso da fonte normal */
 }
 
 .menuLinks a:hover {
     color: #00aaff; /* Cor ao passar o mouse */
+    transform: translateY(-3px); /* Move levemente para cima */
 }
+
 
 @media (max-width: 768px) {
     .menuLinks a {
-        font-size: 2.2rem; /* Aumenta o tamanho da fonte para telas menores */
+        font-size: 1.4rem !important;
+        margin: 0px 5px !important;
     }
 }
+
 
 
 /****************** APRESENTAÇÃO **************/
