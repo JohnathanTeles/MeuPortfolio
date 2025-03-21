@@ -106,6 +106,7 @@ html, body {
     align-items: center;
     height: 100vh;
     padding: 80px 5%;
+
     text-align: center;
     background-image: url('imagem/background.png');
     background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
@@ -205,7 +206,7 @@ html, body {
 
 /**************** CONTAINERS *****************/
 .container {
-    padding: 60px 5%;
+    padding: 80px 5%;
     text-align: center;
 }
 
@@ -291,8 +292,7 @@ html, body {
     justify-content: center;
 }
 
-.view-project,
-.repository {
+.view-project,.repository {
     padding: 10px 15px;
     border: none;
     cursor: pointer;
