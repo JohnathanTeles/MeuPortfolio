@@ -31,14 +31,16 @@
 			}
 
 
-        function redirectToWhatsApp() {
-            let telefone = '5562995552510';  
-			let mensagem = 'Olá Johnathan, vi seu portfólio e gostaria de saber mais sobre suas habilidades e projetos. Vamos conversar!';
+			function redirectToWhatsApp() {
+			    let telefone = '5562995552510';  
+			    let mensagem = 'Olá Johnathan, vi seu portfólio e gostaria de saber mais sobre suas habilidades e projetos. Vamos conversar!';
 
-            let linkWhatsApp = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
-            
-            window.location.href = linkWhatsApp;
-        }
+			    let linkWhatsApp = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+
+			    // Abre o link em uma nova aba
+			    window.open('_blank', linkWhatsApp );
+			}
+
 
 			function contatoSelecionado(event) {
 			    event.preventDefault();

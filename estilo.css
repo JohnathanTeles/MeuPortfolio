@@ -127,10 +127,29 @@ html, body {
     text-align: left;
     z-index: 99;
 }
+
 @media (max-width: 768px) {
     #texto-apresentacao {
         margin-top: 20%;
     }
+}
+
+.icon_inicio {
+    display: flex; 
+    gap: 10px; 
+    margin: 10px 0px 0px 10px;
+    justify-content: left;
+}
+@media (max-width: 768px) {
+    .icon_inicio {
+        justify-content: center;
+        margin-right: 10px;
+    }
+}
+
+.icon {
+    width: 40px; 
+    height: 40px;
 }
 
 
