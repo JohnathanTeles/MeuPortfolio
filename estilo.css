@@ -30,7 +30,7 @@ html, body {
 @media (max-width: 768px) {
     .menu {
         flex-direction: column; /* Empilha os itens verticalmente */
-        padding: 7% 0px;
+        padding: 5% 0px;
     }
 }
 #jt-container {
@@ -44,6 +44,23 @@ html, body {
         display: none;
     }
 }
+  .btn-login {
+    display: inline-block;
+    background-color: #222222; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0s;
+    font-family: "Segoe UI", sans-serif; /* Definindo a fonte como Segoe UI */
+    font-size: 1.2rem; /* Tamanho da fonte para telas maiores */
+
+  }
+
+  .btn-login:hover {
+    background-color: #1A1E68;
+  }
 
 #jt, #jt.fullName {
     font-size: 1.8rem;
