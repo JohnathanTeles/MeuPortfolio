@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfólio - Johnathan Teles</title>
         <link rel="stylesheet" href="estilo.css">
+        <script src="script.js"> </script>
     </head>
     <body>
 
-        <script src="script.js"> </script>
 
         <!-- MENU -->
         <nav class="menu">
@@ -119,7 +119,21 @@
             <div class="card">
                 <h3>Help Desk</h3>
                 <div class="imagem-container">
-                    <img src="imagem/img-projetos/helpdesk.png" alt="Projeto 1">
+
+                    <div class="carousel">
+                      <div class="carousel-images" id="carouselImages">
+                        <img src="imagem/img-projetos/helpdesk/helpdesk.png">
+                        <img src="imagem/img-projetos/helpdesk/abrirchamado.png">
+                        <img src="imagem/img-projetos/helpdesk/verchamado.png">
+                        <img src="imagem/img-projetos/helpdesk/helplogin.png">
+
+                      </div>
+
+                      <button class="button prev" onclick="prevSlide()">&#10094;</button>
+                      <button class="button next" onclick="nextSlide()">&#10095;</button>
+                    </div>
+
+
                 </div>
                 <div class="containerProjeto">
                     <div class="title-container">
@@ -152,7 +166,7 @@
             <div class="card">
                 <h3>Time Clock</h3>
                 <div class="imagem-container">
-                    <img src="imagem/img-projetos/descubraIdade.png" alt="Projeto 1">
+                    <img src="imagem/img-projetos/lifeclock.png" alt="Projeto 1">
                 </div>
                 <div class="containerProjeto">
                     <div class="title-container">
