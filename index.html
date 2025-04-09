@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfólio - Johnathan Teles</title>
         <link rel="stylesheet" href="estilo.css">
-        <script src="script.js"> </script>
+
     </head>
     <body>
 
@@ -119,17 +119,14 @@
             <div class="card">
                 <h3>Help Desk</h3>
                 <div class="imagem-container">
-                    <div class="carousel">
-                      <div class="carousel-images" id="carouselImages">
+                    
+                    <meu-carrossel>
                         <img src="imagem/img-projetos/helpdesk/helpdesk.png">
                         <img src="imagem/img-projetos/helpdesk/abrirchamado.png">
                         <img src="imagem/img-projetos/helpdesk/verchamado.png">
                         <img src="imagem/img-projetos/helpdesk/helplogin.png">
-                      </div>
 
-                      <button class="button prev" onclick="prevSlide()">&#10094;</button>
-                      <button class="button next" onclick="nextSlide()">&#10095;</button>
-                    </div>
+                    </meu-carrossel>
                 </div>
                 <div class="containerProjeto">
                     <div class="title-container">
@@ -154,15 +151,16 @@
             <div class="card">
                 <h3>Time Clock</h3>
                 <div class="imagem-container">
-                    <img src="imagem/img-projetos/lifeclock/lifeclock.png">
+
+                    <meu-carrossel>
+                        <img src="imagem/img-projetos/lifeclock/lifeclock.png">
+                        <img src="imagem/img-projetos/lifeclock/data.png">
+                        <img src="imagem/img-projetos/lifeclock/resultado.png">
+                    </meu-carrossel>
+
                 </div>
                 <div class="containerProjeto">
                     <div class="title-container">
-                        <div class="icons">
-                            <img src="imagem/img-linguagens/html.png">
-                            <img src="imagem/img-linguagens/css3.png">
-                            <img src="imagem/img-linguagens/js.png">
-                        </div>
                     </div>
                     <p>O LifeClock é uma ferramenta simples e interativa que permite calcular a idade de uma pessoa a partir da sua data de nascimento. Além de exibir a idade em anos, meses e dias, também fornece informações sobre o total de dias, horas, minutos e milissegundos vividos até o momento. A interface é intuitiva e fácil de usar, proporcionando uma experiência prática e eficiente aos usuários.</p>
                     <div class="buttons">
@@ -178,7 +176,14 @@
             <div class="card">
                 <h3>Game Shop</h3>
                 <div class="imagem-container">
-                    <img src="imagem/img-projetos/lojadegames/lojadegames.PNG">
+                    <meu-carrossel>
+                        <img src="imagem/img-projetos/lojadegames/lojadegames.png">
+                        <img src="imagem/img-projetos/lojadegames/carrinhodecompras.png">
+                        <img src="imagem/img-projetos/lojadegames/pagamento.png">
+                        <img src="imagem/img-projetos/lojadegames/login.png">
+                        <img src="imagem/img-projetos/lojadegames/cadastre-se.png">
+
+                    </meu-carrossel>                
                 </div>
                 <div class="containerProjeto">
                     <div class="title-container">
@@ -249,6 +254,7 @@
 
             </div>
         </section>
+        <script type="module" src="./webcomponent/carrossel.js"></script>
 
     </body>
 </html>
