@@ -57,7 +57,5 @@ Simples calculadora de quatro operações com layout responsivo e interativo.
 Se quiser me contatar, clique no botão "Contate me" no site, que leva direto para meu WhatsApp.
 Ou entre em contato pelas redes:
 
-GitHub: @JohnathanTeles
-
-LinkedIn: Johnathan Teles
+LinkedIn: http://www.linkedin.com/in/johnathanteles
 
