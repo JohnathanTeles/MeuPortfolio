@@ -21,7 +21,6 @@ Inclui seções como:
 - CSS3
 - JavaScript
 - Web Components (Carrossel personalizado)
-- [JQuery](https://jquery.com/) (em alguns projetos)
 - PHP (em projetos do portfólio)
 - PostgreSQL (em projetos acadêmicos)
 
